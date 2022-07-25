@@ -3,7 +3,10 @@ import styles from '../styles/Home.module.css'
 import {useRef, useState} from 'react'
 
 
+
 export default function Home(){
+	 
+
 	const inputRef=useRef()
 	const [shortURL, setShortURL]=useState('')
 	const handleSubmit = e => {
@@ -24,12 +27,11 @@ export default function Home(){
  return(
 
     <div className={styles.container}>
-       <head>
+       <Head>
 	 <title>URL Shortener</title>
 	 <meta name="description" content="A url shortener create by nicoarkano use next-app and following a tutorial of carlos azaustre"/>
 	 <link rel = 'icon' href='https://ucarecdn.com/ac1617ff-893d-49fe-945f-e10d2378cb56/favicon.png' />
-       </head>
-       <body>
+       </Head>
 	 <main className={styles.main}>
 	   <h1 className={styles.title}> URL Shortener</h1>
 	   <p className={styles.description}> Short yours URLs Here </p>
@@ -40,7 +42,6 @@ export default function Home(){
 	     </form>
 	   </div>
 	 </main>
-       </body>
 
 
       </div>
